@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Riley Wood - 3d Art Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<!--header-->
+		<div class="progressBarHolder"><!--holds the progress bar(shocking I know)-->
+			<div id="progressBar"></div>  <!--actual colored part of the progress bar-->
+		</div>
+		<div class="headerContainer"><!--holds the header elements, sets up flexbox for them-->
+			<div style="flex: 1;"></div><!--spacer-->
+			<a href="index.html" class="headerItem" style="flex: 1.5;">
+					Home
+			</a>
+			<div style="flex: 1;"></div><!--spacer-->
+			<a href="3dArt.html" class="headerItem" style="flex: 1.5;">
+					3D Art
+			</a>
+			<div style="flex: 1;"></div><!--spacer-->
+			<a href="webdev.html" class="headerItem" style="flex: 1.5;">
+					Web Development
+			</a>
+			<div style="flex: 1;"></div><!--spacer-->
+			<a href="Index.html#contact" class="headerItem" style="flex: 1.5;">
+					Contact Me
+			</a>
+			<div style="flex: 1;"></div><!--spacer-->
+		</div>
+	<!--Header-->
+	<div style="padding: 0; margin: 0;">
+		<img src="images/gomp.jpg" style="margin: 0; width:100%;" > <!--main image-->
+	</div>
+	
+		<div class="textContainer"> <!--first block of content-->
+			<div>
+				<h5>About my Art</h5>
+				<p>I have been working in the digital 3D medium for 4 years since I started in high school. My most improtant learning experience so far has been my internship at 3:1 Games, where I built my 3D fundamentals and learned the skills of working in the Games industry. I enjoy weapon design and creature sculpting in particular, but I have  a wide base of 3D skills.</p>
+			</div>
+		</div>
+
+		<div style="display: flex; flex-direction: row;  background-color: #00211d;"> <!--this block is set up differently becasue it also contains the slideshow-->
+			<div class="textContainer"> <!--text part of this horizontal section-->
+				<div>
+					<h5>Skills</h5>
+					<br>
+					<dl><!--list of my skills. decided to use a description list to save space/provide better organization-->
+						<dt>3D Modeling</dt>
+						<dd>- 3D Modeling, Creature Modeling, Enviroment Modeling, Prop and Weapon Modeling</dd>
+						<dt>Texturing</dt>
+						<dd>- UV Mapping, Shaders, PBR Texturing</dd>
+						<dt>Rigging & Animation</dt>
+						<dd>- Retopology, Rigging, Character Animation</dd>
+						<dt>Technical</dt>
+						<dd>- git, Post-Processing Effects</dd>
+					</dl>
+				</div>
+			</div>
+
+			<div style="flex: 1; padding: 4%;"> <!--This part holds the slideshow-->
+				<div class="slideshowContainer">
+					<div class="slides fade"><!-- using a " " allows you to apply more than one class-->
+						<div class="slideNumber">1 / 3</div><!--the number displayed top left of the image (what slide number it is on)-->
+						<a href="https://riley-wood.artstation.com/projects/Oo5oDe"><!--add a link so that the images are clickable-->
+							<img src="images/harpoon.jpg" style="width: 100%;"><!--image (all ofthem have the same aspect ratio so they don't interrupt the size of the site-->
+						</a>
+						<div class="caption">Harpoon Gun Concept Model</div><!--caption (displayed bnottom center of the slidewshow)-->
+					</div>
+
+					<div class="slides fade">
+						<div class="slideNumber">2 / 3</div>
+						<a href="https://riley-wood.artstation.com/projects/xJreLX">
+							<img src="images/monster.jpg" style="width: 100%; ">
+						</a>
+						<div class="caption">Sea Monster Sculpt</div>
+					</div>
+
+					<div class="slides fade">
+						<div class="SlideNumber">3 / 3</div>
+						<a href="https://riley-wood.artstation.com/projects/rANrw2">
+							<img src="images/mask.jpg" style="width: 100%; ">
+						</a>
+						<div class="caption">Owl Mask Retopology Practice</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	<div class="textContainer"> <!--second text element-->
+		<div>
+				<h5>Experience</h5>
+				<p>My experience in the 3D industry so far has entirely come from the 2 years I spent as an intern at 3:1 Games. This was a trasnformational time for me and I learned more than I thought possible. I am looking forward to more oppertunities to work in the games industry, as well as continuing my 3D education in college.</p>\
+				<br><br><br>
+				<p>To see more of my work, visit my Artstation portfolio <a href="https://riley-wood.artstation.com/albums/3202245">here</a> or my work progress blog <a href="https://riley-wood.artstation.com/albums/3202237">here</a></p>
+		</div>
+	</div>
+	<div>
+		<img src="images/gunblueprint1.png" width="100%">
+	</div>
+	<script src="javascript/slideShow.js"></script> <!--add scripts-->
+	<script src="javascript/progressBar.js"></script>
+</body>
+</html>

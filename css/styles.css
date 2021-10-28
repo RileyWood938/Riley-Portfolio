@@ -1,0 +1,186 @@
+* , body , img , div, html{ /*reset css style so that there is no gap between elements where I dont want it*/
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+html{ /* set background color, width*/
+	background-color: #0a0c17;
+	max-width: 100%;
+}
+.headerContainer{ /*set up flexbox and z-indexing for the header container*/
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	margin: 0;
+}
+.headerItem{ /*style the buttons in the header*/
+	background-color: rgba(130, 130, 130, 0.9);
+	border-radius: 20px;
+	padding: .5%;
+	margin: 1%;
+	text-decoration: none; /*remember to set this or else the links will look bad*/
+	color: black;
+	display: flex;
+	justify-content: center; /*make sure content remains vertiaccly centered when text begins to wrap at small screen sizes*/
+	align-items: center;
+}
+.headerItem:hover{ /*add hover effect for buttons*/
+	background-color: rgba(130, 130, 130, .965);
+}
+h1{
+	font-family: Tahoma;
+}
+h3{
+	font-size: 2vw;
+	color: #4f45e7;
+	font-family: Tahoma;
+}
+h4{
+	font-size: 1.5vw;
+	color: #4f45e7;
+}
+a h4{
+	text-decoration: underline;
+	text-decoration-color: #4f45e7;
+}
+h5{
+	font-size: 36px;
+	color: #b1b1b1;
+	font-family: Tahoma;
+}
+p{
+	font-size: 24px;
+	color: /*#4f45e7*/ #b1b1b1;
+}
+dl, ul{ /*styles for the skills list on 3D art page*/
+	font-size: 24px;
+	color: #b1b1b1;
+}
+dt{
+	font-weight: bold;
+}
+dd{
+	margin-left: 2%; /*insets the descriptions*/
+	margin-bottom: 1%;
+}
+.textContainer{ /*default text block container*/
+	padding: 2%;
+	padding-left: 7vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+input[type=text], textarea{ /*style the contact form*/
+	width: 100%;
+	padding: 1%;
+	border-radius: 5px;
+	background-color: rgba(110, 110, 110, 1);
+	margin-top: .25%;
+	margin-bottom: .75%;
+}
+input[type=text]:focus, textarea:focus{ /*add focus styles to text inputs*/
+	background-color: rgba(90, 90, 90, 1);
+}
+label{ /*style labels for Form*/
+	font-size: 18px;
+	color: /*#4f45e7*/ #b1b1b1;
+}
+input[type=submit]{ /*style submit button on contact me form*/
+	padding: .5%;
+	background-color: rgba(110, 110, 110, 1.0);
+	margin-top: 1%;
+	border-radius: 5px;
+	padding-right: 1%;
+	padding-left: 1%;
+
+}
+input[type=submit]:hover{
+	background-color: rgba(90, 90, 90, 1.0);
+}
+.slideshowContainer{ /*style for div that holds the image slideshow on #D page*/
+	position: relative;
+	margin: auto;
+	border: 1px solid black;
+}
+.slideshowContainer:hover{ /* Add a bit of highlight so that the images feel good to hover over*/
+	box-shadow: 0px 0px 15px rgba(255, 255, 255, .20);
+}
+.slides{ /*hide all of the slideshow images by default*/
+	display: none;
+}
+.caption{ /*style slideshow Captions*/
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 4%;
+	width: 100%;
+	text-align: center;
+}
+.slideNumber{ /*style slide Numbers*/
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+.fade{
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {/*setup for fade animation*/
+	from {opacity: .5}
+	to {opacity: 1}
+}
+.overlay{/*position the the overlay element*/
+	position: relative;
+	bottom: 120vw;
+	left: 7vw;
+}
+
+@media screen and (max-width:1400px){ /*try to get the element that floats over the banner image to be in the right place all the time*/
+	.overlay{
+		bottom: 125vw; 
+	}
+}
+@media screen and (max-width:1200px){
+	.overlay{
+		bottom: 135vw; 
+	}
+}
+@media screen and (max-width:1000px){
+	.overlay{
+		bottom: 165vw; 
+	}
+}
+@media screen and (max-width:850px){
+	.overlay, {
+		bottom: 175vw; 
+	}
+}
+@media screen and (max-width:650px){
+	.overlay{
+		bottom: 190vw; 
+	}
+}
+.progressBarHolder{ /*create progress bar at top of screen*/
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	height: 1%;
+}
+#progressBar{
+	background-color: #4f45e7;
+	width: 0%;
+	height: 100%;
+}
+a{
+	color: inherit;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Riley Wood - Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<!--header-->
+		<div class="progressBarHolder"> <!--holds the progress bar(shocking I know)-->
+			<div id="progressBar"></div> <!--actual colored part of the progress bar-->
+		</div>
+		<div class="headerContainer"> <!--holds the header elements, sets up flexbox for them-->
+			<div style="flex: 1;"></div> <!--spacer-->
+			<a href="#top" class="headerItem" style="flex: 1.5;">
+					Home
+			</a>
+			<div style="flex: 1;"></div> <!--spacer-->
+			<a href="3dArt.html" class="headerItem" style="flex: 1.5;">
+					3D Art
+			</a>
+			<div style="flex: 1;"></div> <!--spacer-->
+			<a href="webdev.html" class="headerItem" style="flex: 1.5;">
+					Web Development
+			</a>
+			<div style="flex: 1;"></div> <!--spacer-->
+			<a href="#contact" class="headerItem" style="flex: 1.5;">
+					Contact Me
+			</a>
+			<div style="flex: 1;"></div> <!--spacer-->
+		</div>
+	<!--Header-->
+
+	<div style="margin: 0; padding: 0;" id=top>
+		<img src="images/BannerImage2.png" style="width: 100vw; margin: 0;" >
+	</div>
+		<div class="textContainer" style="height: 45vh;">
+			<div>
+				<h5>Hi, I'm Riley</h5>
+				<p>Im a student at New College of Florida with a love for 3D art. I've had 2 amazing years of internship experience at 3:1 Games and am skilled at modeling, sculpting, rigging, enviroment and prop design, and technical art. Amoung my other interests is Web Development, which this website has been created to demonstrate.</p>
+				<br>
+				<br>
+				<br>
+				<br>
+				<p>Take a look at my resume by clicking <a href="Resume-Riley Wood.pdf" download="Resume-Riley Wood.pdf">here</a>!</p>
+				<p> Or look through my portfolio using the tabs at the top of your screen.</p>
+			</div>	 <!--big o'l text contailer with most of the page's content-->
+		</div>
+
+	<div>
+		<img src="images/gunblueprint1.png" style="width: 100%;">
+	</div>
+	
+	<div id="contact" style="width: 70%; padding: 1%; padding-left: 7vw;"> <!--div that contains Contact form-->
+		<h5>Contact Me!</h5>
+		<p>Feel free to email me at <a href="mailto:rileywood925@gmail.com">rileywood925@gmail.com</a>, or fill out the form below!</p>
+		<br>
+		<form> <!--create Contact form-->
+			<label>First Name: </label>
+			<input type="text" name="fname" placeholder="First Name" required="required">
+			<label>Last Name: </label>
+			<input type="text" name="lname" placeholder="Last Name" required="required">
+			<label>Message: </label>
+			<textarea name="fsubject" rows="8" placeholder="Write Something!" required="required"></textarea>
+			<input type="submit" name="submit">
+		</form>
+	</div>
+
+	<!--Bit that floats over the image-->
+		<div class="overlay">
+			<img src="images/ProfileImg2.png" width="17.5%">
+			<h1 style="font-size: 7vw; color: #4f45e7;">Riley Wood</h1>
+			<h3>3D artist, Web Designer</h3>
+			<a href="mailto:rileywood925@gmail.com"><h4>rileywood925@gmail.com</h4></a>
+		</div>
+	<!--Bit that floats over the image-->
+	<script src="javascript/progressBar.js"></script> <!--add script for scrollbar-->
+</body>
+</html>
